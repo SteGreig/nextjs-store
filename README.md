@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+It is styled with [TailwindCSS](https://tailwindcss.com/docs/installation) and the API used is [DummyJSON](https://dummyjson.com/docs).
+
 ## Getting Started
 
 First, run the development server:
@@ -15,22 +17,22 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ 
+## Homework
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Take some time to look through the existing application and identify things that can be improved:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- visual design
+- user experience of the existing features (copy, interactions, etc.)
+- performance
+- accessibility (a11y)
 
-## Learn More
+Then, spend an hour or so implementing key improvements, in this order of priority:
 
-To learn more about Next.js, take a look at the following resources:
+1. make it work on mobile 
+1. improve the look and feel
+1. fix any UX quick wins 
+1. fix any a11y quick wins
+1. make code improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Do not attempt to implement any new features (ie. the shopping basket). It's not important that you finish any of this work, if you run out of time just make a note of the things you would do if you had more time.
