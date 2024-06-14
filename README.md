@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-It is styled with [TailwindCSS](https://tailwindcss.com/docs/installation) and the API used is [DummyJSON](https://dummyjson.com/docs).
+The applications is styled with [TailwindCSS](https://tailwindcss.com/docs/installation) and the API used is [DummyJSON](https://dummyjson.com/docs).
 
 ## Getting Started
 
@@ -36,3 +36,7 @@ Then, spend an hour or so implementing key improvements, in this order of priori
 1. make code improvements
 
 Do not attempt to implement any new features (ie. the shopping basket). It's not important that you finish any of this work, if you run out of time just make a note of the things you would do if you had more time.
+
+## The interview
+
+In the interview, we will ask you to work through developing a feature in the application. As this is a NextJS application that uses Server Components - make sure you are familiar with this paradigm and what you can and can't do in server/client components.
