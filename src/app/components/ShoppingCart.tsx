@@ -87,8 +87,9 @@ export const ShoppingCartButton = () => {
   const { setIsOpen } = useShoppingCart();
 
   return (
-    <button onClick={() => setIsOpen(true)}>
+    <button className="btn" onClick={() => setIsOpen(true)}>
       <ShoppingCartIcon />
+      <span>Basket</span>
     </button>
   );
 };

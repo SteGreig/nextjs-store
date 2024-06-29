@@ -19,7 +19,7 @@ export default async function Home() {
               return (
                 <div key={category.slug}>
                   <a
-                    className="flex gap-1 items-baseline py-1 hover:text-purple-500"
+                    className="flex gap-1 items-baseline py-1 hover:text-purple-700"
                     href={`#${category.slug}`}
                   >
                     {category.name}

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac maximus tellus. Praesent porttitor ac eros non pulvinar.",
-  metadataBase: new URL('https://ooooby.vercel.app/'),
+  metadataBase: new URL("https://ooooby.vercel.app/"),
   openGraph: {
     images: {
       url: "/opengraph-image.png",
@@ -41,10 +41,10 @@ export default async function RootLayout({ children }: Props) {
   const cart = await fetchCart();
 
   return (
-    <html className="scroll-smooth">
+    <html className="scroll-smooth" lang="en">
       <body className={inter.className}>
         <ShoppingCartProvider>
-          <div className="p-4 px-8 bg-white border-b flex justify-center ">
+          <div className="p-4 px-6 bg-white border-b flex justify-center">
             <div className="w-full flex justify-between">
               <Image
                 src="/logo.svg"
