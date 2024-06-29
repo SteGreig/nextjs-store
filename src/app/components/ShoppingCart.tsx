@@ -34,7 +34,7 @@ export const ShoppingCart = ({ cart }: Readonly<{ cart: Cart }>) => {
   return (
     <>
       <div
-        className={`w-11/12 max-w-96 bg-white fixed top-0 right-0 h-screen p-4 transition-all z-20 overflow-y-auto ${
+        className={`w-11/12 max-w-96 bg-white fixed top-0 right-0 h-screen p-4 transition-all z-40 overflow-y-auto ${
           isOpen ? "cart-open translate-x-0 shadow-2xl" : "translate-x-full"
         }`}
       >
@@ -101,12 +101,14 @@ export const ShoppingCart = ({ cart }: Readonly<{ cart: Cart }>) => {
           </div>
         </div>
       </div>
-      {isOpen && (
-        <div
-          onClick={() => setIsOpen(false)}
-          className="bg-black/50 fixed top-0 right-0 h-screen w-screen z-10"
-        />
-      )}
+      <div
+        onClick={() => setIsOpen(false)}
+        className={`bg-black/60 fixed top-0 right-0 h-screen w-screen z-30 transition ${
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+      />
     </>
   );
 };

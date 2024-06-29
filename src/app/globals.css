@@ -11,8 +11,13 @@ body {
   @apply bg-gray-100 text-black;
 }
 
-body:has(.cart-open) {
+body:has(.cart-open),
+body:has(.menu-open) {
   @apply overflow-hidden;
+}
+
+::selection {
+  @apply bg-purple-200;
 }
 
 a {
