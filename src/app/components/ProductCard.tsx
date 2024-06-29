@@ -3,6 +3,7 @@ import { Product as ProductType } from "../types/Product";
 import { ShoppingCartIcon } from "lucide-react";
 import { PlusIcon } from "lucide-react";
 import truncate from "../helpers/truncateString";
+import formatPrice from "../helpers/formatPrice";
 
 type Props = {
   product: ProductType;
@@ -24,15 +25,17 @@ export const ProductCard = ({ product }: Props) => (
         />
       </div>
     </div>
-    <div className="p-4 flex flex-col flex-1 gap-2">
+    <div className="p-4 pb-2 md:pb-4 flex flex-col flex-1 gap-2">
       <h3 className="font-semibold leading-snug">{product.title}</h3>
       <p className="text-gray-500 font-light text-sm/snug hidden md:block">
         {truncate(product.description, 90)}...
       </p>
     </div>
     <div className="md:border-t border-gray-200 p-4 pt-0 md:pt-4 mt-auto flex flex-wrap items-center justify-between gap-2">
-      <p className="font-medium w-full md:w-auto">${product.price}</p>
-      <button className="btn">
+      <p className="font-medium w-full md:w-auto">
+        {formatPrice(product.price)}
+      </p>
+      <button className="btn btn--outline">
         <span>Add to basket</span>
         <PlusIcon />
       </button>
