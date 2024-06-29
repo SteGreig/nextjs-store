@@ -48,7 +48,7 @@ export const ShoppingCart = ({ cart }: Readonly<{ cart: Cart }>) => {
           <div className="divide-y-2">
             {cart.products.map((product) => (
               <article key={product.id} className="flex gap-2 p-1">
-                <Image src={product.thumbnail} width="50" height="50" />
+                <Image src={product.thumbnail} width="50" height="50" alt={product.title} />
                 <div className="text-gray-400">
                   <h4 className="text-blue-500 leading-loose">
                     {product.title}
