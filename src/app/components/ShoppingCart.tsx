@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { ShoppingCartIcon } from 'lucide-react';
-import Image from 'next/image';
+import { ShoppingCartIcon } from "lucide-react";
+import Image from "next/image";
 
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from "react";
 
 export type Cart = {
   id: number;
@@ -34,7 +34,7 @@ export const ShoppingCart = ({ cart }: Readonly<{ cart: Cart }>) => {
     <>
       <div
         className={`md:w-96 bg-white fixed top-0 right-0 h-screen p-4 shadow-2xl transition-all z-20 ${
-          isOpen ? 'translate-x-0' : 'translate-x-96'
+          isOpen ? "translate-x-0" : "translate-x-96"
         }`}
       >
         <div className="flex gap-2 flex-col">
@@ -48,7 +48,12 @@ export const ShoppingCart = ({ cart }: Readonly<{ cart: Cart }>) => {
           <div className="divide-y-2">
             {cart.products.map((product) => (
               <article key={product.id} className="flex gap-2 p-1">
-                <Image src={product.thumbnail} width="50" height="50" alt={product.title} />
+                <Image
+                  src={product.thumbnail}
+                  width="50"
+                  height="50"
+                  alt={product.title}
+                />
                 <div className="text-gray-400">
                   <h4 className="text-blue-500 leading-loose">
                     {product.title}
