@@ -38,8 +38,8 @@ type Props = Readonly<{
 }>;
 
 export default async function RootLayout({ children }: Props) {
-  const cart = await fetchCart();
-  const cartCount = cart.products.length;
+  // const cart = await fetchCart();
+  // const cartCount = cart.products.length;
 
   return (
     <html className="scroll-smooth" lang="en">
@@ -53,8 +53,8 @@ export default async function RootLayout({ children }: Props) {
                 width="174"
                 height="26"
               />
-              <ShoppingCartButton cartCount={cartCount} />
-              <ShoppingCart cart={cart} />
+              <ShoppingCartButton />
+              <ShoppingCart />
             </div>
           </div>
           {children}

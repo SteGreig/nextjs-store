@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 :root {
   /* --foreground-rgb: 0, 0, 0;
@@ -44,3 +43,5 @@ a {
   width: 1em;
   height: 1em;
 }
+
+@tailwind utilities;
