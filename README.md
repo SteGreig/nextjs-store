@@ -17,26 +17,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
- 
-## Homework
-
-Take some time to look through the existing application and identify things that can be improved:
-
-- visual design
-- user experience of the existing features (copy, interactions, etc.)
-- performance
-- accessibility (a11y)
-
-Then, spend an hour or so implementing key improvements, in this order of priority:
-
-1. make it work on mobile 
-1. improve the look and feel
-1. fix any UX quick wins 
-1. fix any a11y quick wins
-1. make code improvements
-
-Do not attempt to implement any new features (ie. the shopping basket). It's not important that you finish any of this work, if you run out of time just make a note of the things you would do if you had more time.
-
-## The interview
-
-In the interview, we will ask you to work through developing a feature in the application. As this is a NextJS application that uses Server Components - make sure you are familiar with this paradigm and what you can and can't do in server/client components.
